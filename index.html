@@ -22,40 +22,41 @@
                 </div>
                 <div class="flex">
                     <img class="w-8 mr-3" src="./assets/coin.png" alt="">
-                    <span >5500 BDT</span>
+                    <span id="total-deposit">5500</span>BDT
                 </div>
             </div>
         </nav>
 
         <banner class="flex justify-center mt-5">
-            <button class='bg-lime-300 w-36
+            <button     class='bg-lime-300 w-36
         p-4 mr-3 rounded font-bold'>Donation</button>
             <button class='bg-yellow-50 w-36 p-4 rounded border-2 font-bold'>History</button>
         </banner>
 
     </header>
 
-    <main>
+    <main class="hidden">
         <section class="container">
             <div class="flex mr-10 ml-10  p-10 justify-center items-center  border-2 mt-4">
                 <div>
                     <img src="./assets/noakhali.png" alt="">
                 </div>
                 
-                
+
+
                     <div class="p-5 ml-8">
-                        <div class="flex">
-                            <img class="w-5" src="./assets/coin.png" alt="">
-                            <span >5500 BDT</span>
+                        <div class="flex bg-gray-100 w-32 p-3 rounded">
+                            <img  src="./assets/coin.png" alt="">
+                            <span id="noakhali-deposit">100</span> BDT
                         </div>
                         <h3 class="text-xl font-bold p-3">Donate for Flood at Noakhali, Bangladesh</h3>
                         <p class="pb-5"> The recent floods in Noakhali have caused significant damage to <br> homes infrastructure. Your
                             donation will help provide essential <br> supplies and to those affected by this disaster. Every
                             contribution,<br> big or small, makes difference. Please join us in supporting the relief  <br>
                             efforts and making a positive impact on the lives of those in need.</p>
-                        <input class="bg-yellow-50  border-2 p-4 w-96" type="text" placeholder="write donation Amount">
+                        <input id="noakhali-amount" class="bg-yellow-50  border-2 p-4 w-96" type="text" placeholder="write donation Amount">
                         <br><br>
-                        <button class='bg-lime-300 w-96   p-4 mr-3 rounded font-bold'>Donate Now</button>
+                        <button id="donate-button"  class='bg-lime-300 w-96   p-4 mr-3 rounded font-bold'>Donate Now</button>
 
                                 
 
@@ -68,18 +69,18 @@
                     </div>
                     
                         <div class="p-5 ml-8">
-                            <div class="flex">
+                            <div class="flex bg-gray-100 w-32 p-3 rounded">
                                 <img class="w-5" src="./assets/coin.png" alt="">
-                                <span >5500 BDT</span>
+                                <span id="feni-deposit" >100 BDT</span>
                             </div>
                             <h3 class="text-xl font-bold p-3">Donate for Flood relief in Feni, Bangladesh</h3>
                             <p class="pb-5"> The recent floods in Noakhali have caused significant damage to <br> homes infrastructure. Your
                                 donation will help provide essential <br> supplies and to those affected by this disaster. Every
                                 contribution,<br> big or small, makes difference. Please join us in supporting the relief  <br>
                                 efforts and making a positive impact on the lives of those in need.</p>
-                            <input class="bg-yellow-50  border-2 p-4 w-96" type="text" placeholder="write donation Amount">
+                            <input id="feni-amount" class="bg-yellow-50  border-2 p-4 w-96" type="text" placeholder="write donation Amount">
                             <br><br>
-                            <button class='bg-lime-300 w-96   p-4 mr-3 rounded font-bold'>Donate Now</button>
+                            <button id="feni-donate-button" class='bg-lime-300 w-96   p-4 mr-3 rounded font-bold'>Donate Now</button>
     
                                     
     
@@ -92,18 +93,18 @@
                         </div>
                         
                             <div class="p-5 ml-8">
-                                <div class="flex">
+                                <div class="flex bg-gray-100 w-32 p-3 rounded">
                                     <img class="w-5" src="./assets/coin.png" alt="">
-                                    <span >100 BDT</span>
+                                    <span id="quata-deposit" >100 BDT</span>
                                 </div>
                                 <h3 class="text-xl font-bold p-3">Aids for injur for Quata movement</h3>
                                 <p class="pb-5"> The recent floods in Noakhali have caused significant damage to <br> homes infrastructure. Your
                                     donation will help provide essential <br> supplies and to those affected by this disaster. Every
                                     contribution,<br> big or small, makes difference. Please join us in supporting the relief  <br>
                                     efforts and making a positive impact on the lives of those in need.</p>
-                                <input class="bg-yellow-50  border-2 p-4 w-96" type="text" placeholder="write donation Amount">
+                                <input id="quata-amount" class="bg-yellow-50  border-2 p-4 w-96" type="text" placeholder="write donation Amount">
                                 <br><br>
-                                <button class='bg-lime-300 w-96   p-4 mr-3 rounded font-bold'>Donate Now</button>
+                                <button id="quata-donate-button"   class='bg-lime-300 w-96   p-4 mr-3 rounded font-bold'>Donate Now</button>
         
                                         
         
@@ -113,7 +114,9 @@
 
         </section>
     </main>
+   <!--  -->
     <script src="./js/index.js"></script>
+    <script src="./js/features.js"></script>
 </body>
 
 </html>
