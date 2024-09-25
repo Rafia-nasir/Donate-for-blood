@@ -28,15 +28,15 @@
         </nav>
 
         <banner class="flex justify-center mt-5">
-            <button     class='bg-lime-300 w-36
+            <button  id="donation"   class='bg-lime-300 w-36
         p-4 mr-3 rounded font-bold'>Donation</button>
-            <button class='bg-yellow-50 w-36 p-4 rounded border-2 font-bold'>History</button>
+            <button id="history"    class='bg-yellow-50 w-36 p-4 rounded border-2 font-bold'>History</button>
         </banner>
 
     </header>
 
-    <main class="hidden">
-        <section class="container">
+    <main>
+        <section class="container hidden" id="donation-section">
             <div class="flex mr-10 ml-10  p-10 justify-center items-center  border-2 mt-4">
                 <div>
                     <img src="./assets/noakhali.png" alt="">
@@ -113,7 +113,17 @@
           
 
         </section>
+
+        <!-- history section -->
+
+        <section>
+       <div id="history-section" class=" grid grid-rows-3 gap-4 hidden">
+
+
+       </div>
+        </section>
     </main>
+
    <!--  -->
     <script src="./js/index.js"></script>
     <script src="./js/features.js"></script>

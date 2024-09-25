@@ -11,6 +11,18 @@ document.getElementById('donate-button').addEventListener('click',function(event
     const totalDepositNumber=parseFloat(totalDeposit)
     const finalRemainingBalance=totalDepositNumber-donateNoakhaliNumber;
     document.getElementById('total-deposit').innerText=finalRemainingBalance;
+
+// history tab
+    const historyRecord = document.createElement('div');
+    historyRecord.className = "bg-white p-2  w-64 border-4  rounded"
+
+    historyRecord.innerHTML = `
+    <p class="text-gray-200 text-lg">Date:${new Date().toLocaleString()}</p>
+    <p>${donateNoakhaliNumber}  taka donate for Flood at Noakhali, Bangladesh</p>
+  
+  `
+  const historyContainer=document.getElementById('history-section');
+  historyContainer.insertBefore(historyRecord,historyContainer.firstChild)
 })
 
 
@@ -27,6 +39,18 @@ document.getElementById('feni-donate-button').addEventListener('click',function(
     const totalDepositNumber=parseFloat(totalDeposit)
     const finalRemainingBalance=totalDepositNumber-donateFeniNumber;
     document.getElementById('total-deposit').innerText=finalRemainingBalance;
+
+    // history tab
+    const historyRecord = document.createElement('div');
+    historyRecord.className = "bg-white p-2  w-64 border-4  rounded"
+
+    historyRecord.innerHTML = `
+    <p class="text-gray-200 text-lg">Date:${new Date().toLocaleString()}</p>
+    <p>${donateFeniNumber}taka donate for Flood relief in Feni, Bangladesh</p>
+  
+  `
+  const historyContainer=document.getElementById('history-section');
+  historyContainer.insertBefore(historyRecord,historyContainer.secondchild)
 })
 
 
@@ -44,4 +68,18 @@ document.getElementById('quata-donate-button').addEventListener('click',function
     const totalDepositNumber=parseFloat(totalDeposit)
     const finalRemainingBalance=totalDepositNumber-donateQuataNumber;
     document.getElementById('total-deposit').innerText=finalRemainingBalance;
+
+// history div
+    const historyRecord = document.createElement('div');
+    historyRecord.className = "bg-white   border-4  "
+
+    historyRecord.innerHTML = `
+    <p class="text-gray-200 text-lg">Date:${new Date().toLocaleString()}</p>
+    <p>${donateQuataNumber} Aids for injur for Quata movement</p>
+  
+  `
+  const historyContainer=document.getElementById('history-section');
+  historyContainer.insertBefore(historyRecord,historyContainer.third)
 })
+
+
