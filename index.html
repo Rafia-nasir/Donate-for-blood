@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate for Flood</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -57,7 +60,7 @@
                         <input id="noakhali-amount" class="bg-yellow-50  border-2 p-4 w-96" type="text" placeholder="write donation Amount">
                         <br><br>
                         <button id="donate-button"  class='bg-lime-300 w-96   p-4 mr-3 rounded font-bold'>Donate Now</button>
-
+                        
                                 
 
                     </div>
@@ -123,6 +126,22 @@
        </div>
         </section>
     </main>
+
+
+    <!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">ok</h3>
+    <p class="py-4">thank u taka successfully added</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 
    <!--  -->
     <script src="./js/index.js"></script>
